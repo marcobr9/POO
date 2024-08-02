@@ -2,25 +2,25 @@ package estoque;
 
 public class Usuario {
 	
-	private String name;
+	private String nome;
 	private String senha;
 	private int acesso;
 	
-	public Usuario(String name, String senha, int acesso) {
+	public Usuario(String nome, String senha, int acesso) {
 		super();
-		this.name = name;
+		this.nome = nome;
 		this.senha = senha;
 		this.acesso = acesso;
 	}
 
 
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
 
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 
