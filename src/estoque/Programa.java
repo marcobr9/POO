@@ -8,6 +8,7 @@ public class Programa {
 		
 		estoque.estocar("Lola","lola14","Caderno","300 paginas, capa dura",156,19.14,null);
 		estoque.estocar("Lola","lola14","Livro","Matematica 5 serie",90,120.99,null);
+		estoque.estocar("Antonio","Ant01985","Livro","Historia 5 serie",90,120.99,null);
 		estoque.imprime();
 	}
 

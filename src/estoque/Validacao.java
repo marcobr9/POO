@@ -18,8 +18,7 @@ public class Validacao {
 
 		public boolean permite(boolean autenticado,int cont){
 			
-			for(int i=0; ListaUsuarios.lista.length > i; i++){
-			   if(autenticado==true && ListaUsuarios.lista[i].getAcesso()>1) {
+			   if(autenticado==true && ListaUsuarios.lista[cont].getAcesso()>1) {
 				   permissao=true;
 			   }else {
 				   try {
@@ -28,7 +27,6 @@ public class Validacao {
 					   System.out.println("Permissao invalida.");
 				   }
 			   }
-			}
 			return permissao;
 		}
 		
@@ -38,17 +36,12 @@ public class Validacao {
 				   if(ListaUsuarios.lista[i].getNome().equals(nome) && ListaUsuarios.lista[i].getSenha().equals(senha)) {
 					   autenticado=true;
 					   cont=i;
+					   permite(autenticado,cont);
 					   break;
 				   }else {
 					      autenticado=false;
 					   }
 				   }
-			
-			if(autenticado==true) {
-				permite(autenticado,cont);
-			}else {
-			   System.out.println("Usuario e senha incorretos.");
-			}
 				
 		}
 

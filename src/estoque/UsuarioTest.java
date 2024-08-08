@@ -24,9 +24,9 @@ class UsuarioTest {
 	
 	@Test
 	void testUsuarioAutenticidade() {
-        
+		Estoque estoque= new Estoque();
 		estoque.estocar("Lola","lola14","Caderno","300 paginas, capa dura",-156,19.14,null);
-		assertEquals(false,validacao.getPermissao());
+		assertEquals(false,Validacao.getPermissao());
 	}
 
 

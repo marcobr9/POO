@@ -22,6 +22,7 @@ public class Estoque {
 				preco=preco*(-1);
 			}
 			
+			
 			if(validacao.getPermissao()==true) {
 				
 				Produto produto = new Produto(nproduto, descricao, quantidade, preco, validade);
